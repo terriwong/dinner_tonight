@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Here is what's for tongiht{% endblock %}
+
+{% block content %}
+    
+    <h3>Here's the pick for tonight:</h3>
+    <br>
+    <h1>{{ details['name'] }}</h1>
+    <br>
+    <div id="details">
+        <p>Neighborhood: {{ details['neighborhood'] }}</p>
+        <p>Type: {{  details['type'] }}</p>
+        <p>Price per person: ${{ details['price'] }}</p>
+        <!-- <ul>
+            <li>Neighborhood: {{ details['neighborhood'] }}</li>
+            <li>Type: {{  details['type'] }}</li>
+            <li>Price per person: ${{ details['price'] }} </li>
+        </ul> -->
+    </div>
+
+{% endblock %}

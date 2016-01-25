@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/cover.css">
+        <title>{% block title %}TITLE GOES HERE{% endblock %}</title>
+    </head>
+    <body>
+        <div class="site-wrapper">
+            <div class="site-wrapper-inner">
+                <div class="cover-container">
+                <br>
+                <a href="/"><img src="/static/img/logo_white@300x300.png"></a>
+                {% block content %}BODY CONTENT GOES HERE{% endblock %}
+               </div>
+            </div>
+        </div>
+
+        <div>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <ul class="flashes">
+                <li>{{message}}</li>
+            </ul>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <br>
+                    
+                    <p class="footer">Beta 1.0. Copyright DinnerTonight 2016. All rights reserved.</p>
+                </div>
+            </div>
+
+        </div>
+        
+    </body>
+
+
+</html>

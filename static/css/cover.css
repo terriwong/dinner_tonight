@@ -27,3 +27,8 @@ p.footer {
     opacity: 0.7;
     letter-spacing: 0.5px;
 }
+
+#details {
+    text-align: center;
+    line-height: 80%;
+}
