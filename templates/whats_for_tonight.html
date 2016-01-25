@@ -6,11 +6,15 @@
     <h3>Here's the pick for tonight:</h3>
     <br>
     <h1>{{ details['name'] }}</h1>
+    <p>{{ details['neighborhood'] }}</p>
     <br>
-    <div id="details">
-        <p>Neighborhood: {{ details['neighborhood'] }}</p>
+    <div id="details"> 
         <p>Type: {{  details['type'] }}</p>
-        <p>Price per person: ${{ details['price'] }}</p>
+        <p>Price per person: ${{ details['price'] }}</p><br>
+        <p>Address: {{ details['address'] }}</p>
+        <br>
+
+        <!-- Below is the original <li> solution, but due to alignment problem, it's replaced by <p> for now. -->
         <!-- <ul>
             <li>Neighborhood: {{ details['neighborhood'] }}</li>
             <li>Type: {{  details['type'] }}</li>
